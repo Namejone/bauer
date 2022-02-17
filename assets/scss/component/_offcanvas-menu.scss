@@ -1,0 +1,92 @@
+@use '../abstract' as *;
+/*----------------------------------------*/
+/*  16. OFFCANVAS-MENU CSS 
+/*----------------------------------------*/
+
+.offcanvas{
+    &__wrapper{
+        position: fixed;
+        right: -280px;
+        top: 0px;
+        background-color: #fff;
+        width: 270px;
+        z-index: 111;
+        height: 100vh;
+        transition: .3s;
+        &.active{
+            right: 0px;
+        }
+    }
+    &__menu{
+        height: calc(100vh - 120px);
+        overflow-y: scroll;
+        scrollbar-width: none;
+        height: calc(100vh - 120px);
+        overflow-y: scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & ul {
+            & li {
+                & a {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #000;
+                    padding: 17px 19px;
+                    border-top: 1px solid #F3F3F3;
+                    position: relative;
+                    &:hover {
+                        color: #ddd;
+                    }
+                    i {
+                        position: absolute;
+                        right: 20px;
+                        top: 23px;
+                        transition: .3s;
+                    }
+                }
+                .submenu {
+                    padding-left: 29px;
+                }
+                &:last-child {
+                    a {
+                        border-bottom: 1px solid #F3F3F3;
+                    }
+                }
+                a[aria-expanded="true"] {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__bottom{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        padding: 20px 18px 35px 18px;
+        background-color: #fff;
+        & a.site-btn {
+            font-size: 18px;
+            &.transparent-btn{
+                color: #ddd;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+

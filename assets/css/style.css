@@ -1,0 +1,402 @@
+/************ TABLE OF CONTENTS ***************
+
+    01. Name CSS
+
+
+
+**********************************************/
+/*
+
+
+*/
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w-img img {
+  width: 100%;
+}
+
+.m-img img {
+  max-width: 100%;
+}
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+  border: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+  margin-top: 0px;
+  font-weight: 500;
+  line-height: 1.2;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Hind", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+
+*::-moz-selection {
+  background: #000;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #000;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+  color: #000;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #000;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+.grey-bg {
+  background: #000;
+}
+
+.pink-bg {
+  background: #000;
+}
+
+.white-bg {
+  background: #ffffff;
+}
+
+.black-bg {
+  background: #000;
+}
+
+.footer-bg {
+  background: #000;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+  color: #ffffff !important;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.theme-color {
+  color: #000 !important;
+}
+
+.black-color {
+  color: #000;
+}
+
+.body-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.body-overlay:hover {
+  cursor: pointer;
+}
+
+.body-overlay.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 575px) {
+  .progress-wrap {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* link btn */
+/*----------------------------------------*/
+/*  02. Header  CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  02. Banner  CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  02. Footer  CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  16. OFFCANVAS-MENU CSS 
+/*----------------------------------------*/
+.offcanvas__wrapper {
+  position: fixed;
+  right: -280px;
+  top: 0px;
+  background-color: #fff;
+  width: 270px;
+  z-index: 111;
+  height: 100vh;
+  transition: 0.3s;
+}
+.offcanvas__wrapper.active {
+  right: 0px;
+}
+.offcanvas__menu {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.offcanvas__menu::-webkit-scrollbar {
+  display: none;
+}
+.offcanvas__menu ul li a {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  padding: 17px 19px;
+  border-top: 1px solid #F3F3F3;
+  position: relative;
+}
+.offcanvas__menu ul li a:hover {
+  color: #ddd;
+}
+.offcanvas__menu ul li a i {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  transition: 0.3s;
+}
+.offcanvas__menu ul li .submenu {
+  padding-left: 29px;
+}
+.offcanvas__menu ul li:last-child a {
+  border-bottom: 1px solid #F3F3F3;
+}
+.offcanvas__menu ul li a[aria-expanded=true] i {
+  transform: rotate(180deg);
+}
+.offcanvas__bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  padding: 20px 18px 35px 18px;
+  background-color: #fff;
+}
+.offcanvas__bottom a.site-btn {
+  font-size: 18px;
+}
+.offcanvas__bottom a.site-btn.transparent-btn {
+  color: #ddd;
+}
+
+/*# sourceMappingURL=style.css.map */

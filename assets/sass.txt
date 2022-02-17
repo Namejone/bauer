@@ -1,0 +1,1 @@
+sass --watch C:\Users\USER\Desktop\work-desk\portfolio\bauer\assets\scss\main.scss:C:\Users\USER\Desktop\work-desk\portfolio\bauer\assets\css\style.css
